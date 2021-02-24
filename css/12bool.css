@@ -4,18 +4,81 @@
     background-color: #ffc0cb;
 }
 
+.debug [class*="col-"] {
+    background-color: lightblue;
+    border: 1px solid black;
+    height: 100%;
+    /* altezza del contenuto, non del contenitore */
+}
+
+.debug [class*="col-"] span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 /*  FRAMEWORK, regole generiche sia per debug 
     sia per release */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* COntainer */
 .container {
     max-width: 1170px;
     margin: 0 auto;
 
+}
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* tutte le classi che iniziano con "col-" */
+[class*="col-"] {
+    float: left;
+}
+
+/* Columns */
+.col-1 {
+    width: calc( ( 100% / 12 ) * 1);
+}
+.col-2 {
+    width: calc( ( 100% / 12 ) * 2);
+}
+.col-3 {
+    width: calc( ( 100% / 12 ) * 3);
+}
+.col-4 {
+    width: calc( ( 100% / 12 ) * 4);
+}
+.col-5 {
+    width: calc( ( 100% / 12 ) * 5);
+}
+.col-6 {
+    width: calc( ( 100% / 12 ) * 6);
+}
+.col-7 {
+    width: calc( ( 100% / 12 ) * 7);
+}
+.col-8 {
+    width: calc( ( 100% / 12 ) * 8);
+}
+.col-9 {
+    width: calc( ( 100% / 12 ) * 9);
+}
+.col-10 {
+    width: calc( ( 100% / 12 ) * 10);
+}
+.col-11 {
+    width: calc( ( 100% / 12 ) * 11);
+}
+.col-12 {
+    width: calc( ( 100% / 12 ) * 12);
 }
