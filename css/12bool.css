@@ -18,6 +18,7 @@
     transform: translate(-50%, -50%);
 }
 
+/* nested */
 .debug .container > [class*="col-"] .container {
     height: 100%;
     padding: 5px;
@@ -97,7 +98,7 @@
 
 
 /* Esempio Offset */
-/* .col-offset-1 {
+.col-offset-1 {
     margin-left: calc( ( 100% / 12 ) * 1);
 }
 .col-offset-2 {
@@ -129,5 +130,5 @@
 }
 .col-offset-11 {
     margin-left: calc( ( 100% / 12 ) * 11);
-} */
+}
 /* n.12 non ha senso di esistere per solo margine */
