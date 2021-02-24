@@ -36,3 +36,10 @@ main img {
 .content p {
     font-size: 10px;
 }
+.content .lang {
+    color: lightgray;
+    background-color: gray;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
