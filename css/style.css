@@ -1,22 +1,38 @@
+/* COMMON */
 body {
     font-family: Roobert,Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
     background-color: black;
     color: white;
 }
+.container {
+    max-width: 1350px;
+}
 
-img {
+/* HEADER */
+header img {
     width: 20%;
 }
-
-section {
+header {
+    text-align: center;
     padding: 10px;
 }
-
-.container {
-    text-align: center;
-}
-
-.container h1 {
+header h1 {
     padding-top: 20px;
     border-bottom: ;
+}
+
+
+/* MAIN */
+main [class*="col-"] {
+    padding: 5px 8px;
+}
+main img {
+    width: 100%;
+}
+
+.content {
+    line-height: 1.5;
+}
+.content p {
+    font-size: 10px;
 }
