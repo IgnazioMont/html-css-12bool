@@ -1,7 +1,22 @@
+body {
+    font-family: Roobert,Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: black;
+    color: white;
+}
+
+img {
+    width: 20%;
+}
+
 section {
     padding: 10px;
 }
 
 .container {
-    background-color: aqua;
+    text-align: center;
+}
+
+.container h1 {
+    padding-top: 20px;
+    border-bottom: ;
 }
